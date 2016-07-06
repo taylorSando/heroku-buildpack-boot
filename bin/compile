@@ -3,6 +3,8 @@
 
 set -e -o pipefail
 
+mkdir target
+
 # sed -l basically makes sed replace and buffer through stdin to
 # stdout so you get updates while the command runs and don't wait for
 # the end.
