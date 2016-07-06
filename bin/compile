@@ -52,7 +52,7 @@ if [[ -d "$env_dir" ]]; then
 fi
 
 export BOOT_LOCAL_REPO="$cache/.m2/repository"
-export BOOT_JVM_OPTIONS="-Xmx768m -Xss512k"
+export BOOT_JVM_OPTIONS="-Xmx768m -Xms700m -Xss512k"
 export BOOT_BIN_VERSION=${BOOT_BIN_VERSION:-latest}
 
 if [[ -f "$cache/boot" ]]; then
